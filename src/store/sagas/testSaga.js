@@ -19,7 +19,7 @@ export function * fetchTestListActionEffect () {
   try {
     const { data } = yield call(fetchTestList)
 
-    if (!isEmpty(data)) {
+    if (data) {
       console.log('Test Data fetched')
 
       yield put(testList(data))
