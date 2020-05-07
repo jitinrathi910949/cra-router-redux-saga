@@ -1,7 +1,7 @@
 import { call, put, takeLatest, all, fork } from 'redux-saga/effects'
 import * as actions from '../actions/types'
-import axios from 'utils/axios'
-import urls from 'utils/urls'
+import axios from '../../utils/axios'
+import urls from '../../utils/urls'
 import { testList } from '../actions/testAction'
 
 
